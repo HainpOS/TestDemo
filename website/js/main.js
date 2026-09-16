@@ -3,12 +3,16 @@ const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 
 navToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('open');
+  const isOpen = navMenu.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', isOpen);
 });
 
 // Đóng menu khi chọn một mục (trên mobile)
 navMenu.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => navMenu.classList.remove('open'));
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
 });
 
 // Header đổ bóng khi cuộn
