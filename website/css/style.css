@@ -311,6 +311,15 @@ a { text-decoration: none; color: inherit; }
 .tour-img span { filter: drop-shadow(0 6px 12px rgba(0,0,0,.2)); transition: transform .3s; }
 .tour-card:hover .tour-img span { transform: scale(1.15); }
 
+.tour-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s;
+}
+.tour-card:hover .tour-img img { transform: scale(1.08); }
+
 /* Gradient "ảnh" theo từng tour */
 .europe-1  { background: linear-gradient(135deg, #667eea, #a78bfa); }
 .europe-2  { background: linear-gradient(135deg, #43a047, #a5d6a7); }
@@ -321,6 +330,13 @@ a { text-decoration: none; color: inherit; }
 .america-1 { background: linear-gradient(135deg, #5c6bc0, #90caf9); }
 .america-2 { background: linear-gradient(135deg, #ef5350, #ffcc80); }
 .america-3 { background: linear-gradient(135deg, #26a69a, #ffe082); }
+.vn-1 { background: linear-gradient(135deg, #ff7043, #ffd180); }
+.vn-2 { background: linear-gradient(135deg, #66bb6a, #c8e6c9); }
+.vn-3 { background: linear-gradient(135deg, #78909c, #b0bec5); }
+.vn-4 { background: linear-gradient(135deg, #ab47bc, #f8bbd0); }
+.vn-5 { background: linear-gradient(135deg, #29b6f6, #80deea); }
+.vn-6 { background: linear-gradient(135deg, #26c6da, #a5d6a7); }
+.vn-7 { background: linear-gradient(135deg, #ffa726, #ff8a65); }
 
 .tour-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
 
