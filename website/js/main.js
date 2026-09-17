@@ -38,3 +38,25 @@ const observer = new IntersectionObserver(
 );
 
 revealTargets.forEach((el) => observer.observe(el));
+
+// Form liên hệ
+const contactForm = document.getElementById('contactForm');
+const formNote = document.getElementById('formNote');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      formNote.textContent = 'Vui lòng điền đầy đủ thông tin bắt buộc.';
+      formNote.className = 'form-note error';
+      return;
+    }
+
+    const name = contactForm.name.value.trim();
+    formNote.textContent = `Cảm ơn ${name}! Chúng tôi sẽ liên hệ lại với bạn sớm nhất.`;
+    formNote.className = 'form-note success';
+    contactForm.reset();
+  });
+}
