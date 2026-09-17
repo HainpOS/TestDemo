@@ -321,6 +321,12 @@ a { text-decoration: none; color: inherit; }
 .america-1 { background: linear-gradient(135deg, #5c6bc0, #90caf9); }
 .america-2 { background: linear-gradient(135deg, #ef5350, #ffcc80); }
 .america-3 { background: linear-gradient(135deg, #26a69a, #ffe082); }
+.oceania-1 { background: linear-gradient(135deg, #ff8a65, #4fc3f7); }
+.oceania-2 { background: linear-gradient(135deg, #66bb6a, #aed581); }
+.oceania-3 { background: linear-gradient(135deg, #00acc1, #80deea); }
+.arctic-1  { background: linear-gradient(135deg, #3949ab, #26c6da); }
+.arctic-2  { background: linear-gradient(135deg, #4fc3f7, #e1f5fe); }
+.arctic-3  { background: linear-gradient(135deg, #37474f, #90a4ae); }
 
 .tour-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
 
