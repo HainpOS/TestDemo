@@ -2,18 +2,19 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --orange: #ff7043;
-  --orange-dark: #f4511e;
-  --cyan: #00bcd4;
-  --yellow: #ffca28;
-  --pink: #ec407a;
-  --ink: #263238;
-  --gray: #607d8b;
+  --sea: #0f9b8e;
+  --sea-dark: #0b7a70;
+  --sky: #4fb8d6;
+  --sand: #e8ac4f;
+  --coral: #ff6f4a;
+  --coral-dark: #e04f2b;
+  --ink: #1d3235;
+  --gray: #5c757a;
   --bg: #ffffff;
-  --bg-alt: #fff8f0;
+  --bg-alt: #f2f8f7;
   --radius: 18px;
-  --shadow: 0 8px 30px rgba(38, 50, 56, .10);
-  --shadow-hover: 0 16px 40px rgba(38, 50, 56, .16);
+  --shadow: 0 8px 30px rgba(29, 50, 53, .10);
+  --shadow-hover: 0 16px 40px rgba(29, 50, 53, .16);
 }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
@@ -31,11 +32,7 @@ img { max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 
 .gradient-text {
-  background: linear-gradient(90deg, var(--orange), var(--pink), var(--cyan));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: var(--sea-dark);
 }
 
 /* ===== BUTTONS ===== */
@@ -51,11 +48,11 @@ a { text-decoration: none; color: inherit; }
 .btn:hover { transform: translateY(-3px); }
 
 .btn-primary {
-  background: linear-gradient(90deg, var(--orange), var(--pink));
+  background: var(--coral);
   color: #fff;
-  box-shadow: 0 6px 20px rgba(255, 112, 67, .4);
+  box-shadow: 0 6px 20px rgba(255, 111, 74, .4);
 }
-.btn-primary:hover { box-shadow: 0 10px 28px rgba(255, 112, 67, .55); }
+.btn-primary:hover { background: var(--coral-dark); box-shadow: 0 10px 28px rgba(224, 79, 43, .5); }
 
 .btn-outline {
   border: 2px solid var(--ink);
@@ -64,7 +61,7 @@ a { text-decoration: none; color: inherit; }
 }
 .btn-outline:hover { background: var(--ink); color: #fff; }
 
-.btn-white { background: #fff; color: var(--orange-dark); box-shadow: var(--shadow); }
+.btn-white { background: #fff; color: var(--coral-dark); box-shadow: var(--shadow); }
 .btn-outline-white { border: 2px solid rgba(255,255,255,.8); color: #fff; }
 .btn-outline-white:hover { background: rgba(255,255,255,.15); }
 
@@ -89,14 +86,14 @@ a { text-decoration: none; color: inherit; }
 }
 
 .logo { display: flex; align-items: center; gap: 8px; font-size: 1.25rem; font-weight: 800; }
-.logo em { font-style: normal; color: var(--orange); }
+.logo em { font-style: normal; color: var(--sea-dark); }
 .logo-icon { font-size: 1.5rem; }
 
 .nav-menu { display: flex; align-items: center; gap: 28px; }
 .nav-menu a { font-weight: 600; color: var(--ink); transition: color .2s; }
-.nav-menu a:hover { color: var(--orange); }
-.nav-menu .btn { color: #fff; background: linear-gradient(90deg, var(--orange), var(--pink)); }
-.nav-menu .btn:hover { color: #fff; }
+.nav-menu a:hover { color: var(--coral); }
+.nav-menu .btn { color: #fff; background: var(--coral); }
+.nav-menu .btn:hover { color: #fff; background: var(--coral-dark); }
 
 .nav-toggle {
   display: none;
@@ -111,7 +108,7 @@ a { text-decoration: none; color: inherit; }
 .hero {
   position: relative;
   padding: 150px 0 120px;
-  background: linear-gradient(135deg, #fff3e0 0%, #ffe0ec 45%, #e0f7fa 100%);
+  background: #e7f4f3;
   overflow: hidden;
   text-align: center;
 }
@@ -146,7 +143,7 @@ a { text-decoration: none; color: inherit; }
   gap: 56px;
   flex-wrap: wrap;
 }
-.stat strong { display: block; font-size: 2rem; color: var(--orange-dark); }
+.stat strong { display: block; font-size: 2rem; color: var(--sea-dark); }
 .stat span { color: var(--gray); font-size: .95rem; }
 
 .hero-decor {
@@ -175,7 +172,7 @@ a { text-decoration: none; color: inherit; }
 .section-tag {
   text-align: center;
   font-weight: 700;
-  color: var(--orange-dark);
+  color: var(--sea-dark);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: .85rem;
@@ -242,16 +239,16 @@ a { text-decoration: none; color: inherit; }
 .tour-img span { filter: drop-shadow(0 6px 12px rgba(0,0,0,.2)); transition: transform .3s; }
 .tour-card:hover .tour-img span { transform: scale(1.15); }
 
-/* Gradient "ảnh" theo từng tour */
-.europe-1  { background: linear-gradient(135deg, #667eea, #a78bfa); }
-.europe-2  { background: linear-gradient(135deg, #43a047, #a5d6a7); }
-.europe-3  { background: linear-gradient(135deg, #ec407a, #ffab91); }
-.asia-1    { background: linear-gradient(135deg, #ff8a80, #ffd180); }
-.asia-2    { background: linear-gradient(135deg, #4fc3f7, #b39ddb); }
-.asia-3    { background: linear-gradient(135deg, #00bcd4, #80deea); }
-.america-1 { background: linear-gradient(135deg, #5c6bc0, #90caf9); }
-.america-2 { background: linear-gradient(135deg, #ef5350, #ffcc80); }
-.america-3 { background: linear-gradient(135deg, #26a69a, #ffe082); }
+/* Màu khối theo từng tour, gợi bản sắc điểm đến thay vì gradient */
+.europe-1  { background: #3d5a80; }
+.europe-2  { background: #4b7f52; }
+.europe-3  { background: #d17a9c; }
+.asia-1    { background: #d9714e; }
+.asia-2    { background: #46689e; }
+.asia-3    { background: #1c9c96; }
+.america-1 { background: #3a5aa6; }
+.america-2 { background: #c0392b; }
+.america-3 { background: #d99a45; }
 
 .tour-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
 
@@ -282,11 +279,11 @@ a { text-decoration: none; color: inherit; }
 }
 
 .price span { display: block; font-size: .78rem; color: var(--gray); }
-.price strong { font-size: 1.25rem; color: var(--orange-dark); }
+.price strong { font-size: 1.25rem; color: var(--coral-dark); }
 
 /* ===== CTA ===== */
 .cta {
-  background: linear-gradient(120deg, var(--orange) 0%, var(--pink) 55%, var(--cyan) 130%);
+  background: var(--sea-dark);
   color: #fff;
   padding: 80px 0;
   text-align: center;
@@ -296,7 +293,7 @@ a { text-decoration: none; color: inherit; }
 .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
 /* ===== FOOTER ===== */
-.footer { background: #1c2b33; color: #b0bec5; padding: 60px 0 0; }
+.footer { background: #123234; color: #a9c4c1; padding: 60px 0 0; }
 
 .footer-grid {
   display: grid;
@@ -308,7 +305,7 @@ a { text-decoration: none; color: inherit; }
 .footer .logo-footer { color: #fff; margin-bottom: 12px; }
 .footer h4 { color: #fff; margin-bottom: 14px; font-size: 1rem; }
 .footer a { display: block; margin-bottom: 8px; transition: color .2s; }
-.footer a:hover { color: var(--yellow); }
+.footer a:hover { color: var(--sand); }
 .footer p { font-size: .95rem; margin-bottom: 8px; }
 
 .footer-bottom {
