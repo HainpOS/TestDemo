@@ -4,26 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liên hệ — Phước Hải Travel</title>
+  <title>Liên hệ — Travelola</title>
   <meta name="description"
-    content="Liên hệ Phước Hải Travel để được tư vấn miễn phí và nhận ưu đãi giảm đến 20% cho nhóm từ 4 người. Hotline 1900 1234.">
-  <link rel="canonical" href="https://phuochaitravel.vn/lien-he">
+    content="Liên hệ Travelola để được tư vấn miễn phí và nhận ưu đãi giảm đến 20% cho nhóm từ 4 người. Hotline 1900 1234.">
+  <link rel="canonical" href="https://travelola.vn/lien-he">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="vi_VN">
-  <meta property="og:title" content="Liên hệ — Phước Hải Travel">
+  <meta property="og:title" content="Liên hệ — Travelola">
   <meta property="og:description"
-    content="Liên hệ Phước Hải Travel để được tư vấn miễn phí và nhận ưu đãi giảm đến 20% cho nhóm từ 4 người. Hotline 1900 1234.">
-  <meta property="og:url" content="https://phuochaitravel.vn/lien-he">
+    content="Liên hệ Travelola để được tư vấn miễn phí và nhận ưu đãi giảm đến 20% cho nhóm từ 4 người. Hotline 1900 1234.">
+  <meta property="og:url" content="https://travelola.vn/lien-he">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Liên hệ — Phước Hải Travel">
+  <meta name="twitter:title" content="Liên hệ — Travelola">
   <meta name="twitter:description"
-    content="Liên hệ Phước Hải Travel để được tư vấn miễn phí và nhận ưu đãi giảm đến 20% cho nhóm từ 4 người. Hotline 1900 1234.">
+    content="Liên hệ Travelola để được tư vấn miễn phí và nhận ưu đãi giảm đến 20% cho nhóm từ 4 người. Hotline 1900 1234.">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -39,7 +39,7 @@
     <div class="container nav">
       <a href="/" class="logo">
         <span class="logo-icon">✈️</span>
-        <span class="logo-text">Phước Hải <em>Travel</em></span>
+        <span class="logo-text">Travel<em>ola</em></span>
       </a>
       <nav class="nav-menu" id="navMenu">
         <a href="/gioi-thieu">Giới thiệu</a>
@@ -47,6 +47,8 @@
         <a href="/chau-au">Châu Âu</a>
         <a href="/chau-a">Châu Á</a>
         <a href="/chau-my">Châu Mỹ</a>
+        <a href="/chau-uc">Châu Úc</a>
+        <a href="/chau-bac-cuc">Bắc Cực</a>
         <a href="/lien-he" class="btn btn-small active">Liên hệ ngay</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="navMenu">☰</button>
@@ -60,8 +62,33 @@
       <p>Liên hệ ngay để được tư vấn miễn phí và nhận ưu đãi <strong>giảm đến 20%</strong> cho nhóm từ 4 người!</p>
       <div class="cta-actions">
         <a href="tel:19001234" class="btn btn-white">📞 Hotline: 1900 1234</a>
-        <a href="mailto:info@phuochaitravel.vn" class="btn btn-outline-white">✉️ info@phuochaitravel.vn</a>
+        <a href="mailto:info@travelola.vn" class="btn btn-outline-white">✉️ info@travelola.vn</a>
       </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <h3>Đăng ký tư vấn miễn phí</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Họ và tên</label>
+            <input type="text" id="cf-name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="cf-phone">Số điện thoại</label>
+            <input type="tel" id="cf-phone" name="phone" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-message">Lời nhắn</label>
+          <textarea id="cf-message" name="message" rows="4"
+            placeholder="Bạn muốn đi đâu, khi nào, cho bao nhiêu người?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Gửi yêu cầu 🚀</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 
@@ -69,8 +96,8 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a href="/" class="logo logo-footer"><span class="logo-icon">✈️</span> Phước Hải <em>Travel</em></a>
-        <p>Chuyên gói du lịch trọn gói Việt Nam — Châu Âu — Châu Á — Châu Mỹ. Uy tín từ 2015.</p>
+        <a href="/" class="logo logo-footer"><span class="logo-icon">✈️</span> Travel<em>ola</em></a>
+        <p>Chuyên gói du lịch trọn gói khắp thế giới. Uy tín từ 2015.</p>
       </div>
       <div>
         <h4>Điểm đến</h4>
@@ -78,6 +105,8 @@
         <a href="/chau-au">Tour Châu Âu</a>
         <a href="/chau-a">Tour Châu Á</a>
         <a href="/chau-my">Tour Châu Mỹ</a>
+        <a href="/chau-uc">Tour Châu Úc</a>
+        <a href="/chau-bac-cuc">Tour Bắc Cực</a>
       </div>
       <div>
         <h4>Công ty</h4>
@@ -88,10 +117,10 @@
         <h4>Liên hệ</h4>
         <p>📍 123 Nguyễn Huệ, Q.1, TP.HCM</p>
         <p>📞 1900 1234</p>
-        <p>✉️ info@phuochaitravel.vn</p>
+        <p>✉️ info@travelola.vn</p>
       </div>
     </div>
-    <div class="footer-bottom">© 2026 Phước Hải Travel. All rights reserved.</div>
+    <div class="footer-bottom">© 2026 Travelola. All rights reserved.</div>
   </footer>
 
   <script src="js/main.js" defer></script>

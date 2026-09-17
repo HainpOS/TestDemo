@@ -302,41 +302,18 @@ a { text-decoration: none; color: inherit; }
 .tour-card:hover { transform: translateY(-8px); box-shadow: var(--glass-shadow-hover); background: var(--glass-bg-strong); }
 
 .tour-img {
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4.5rem;
+  height: 200px;
+  overflow: hidden;
+  background: var(--bg-alt);
 }
-.tour-img span { filter: drop-shadow(0 6px 12px rgba(0,0,0,.2)); transition: transform .3s; }
-.tour-card:hover .tour-img span { transform: scale(1.15); }
-
 .tour-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform .4s;
+  transition: transform .3s;
 }
 .tour-card:hover .tour-img img { transform: scale(1.08); }
-
-/* Gradient "ảnh" theo từng tour */
-.europe-1  { background: linear-gradient(135deg, #667eea, #a78bfa); }
-.europe-2  { background: linear-gradient(135deg, #43a047, #a5d6a7); }
-.europe-3  { background: linear-gradient(135deg, #ec407a, #ffab91); }
-.asia-1    { background: linear-gradient(135deg, #ff8a80, #ffd180); }
-.asia-2    { background: linear-gradient(135deg, #4fc3f7, #b39ddb); }
-.asia-3    { background: linear-gradient(135deg, #00bcd4, #80deea); }
-.america-1 { background: linear-gradient(135deg, #5c6bc0, #90caf9); }
-.america-2 { background: linear-gradient(135deg, #ef5350, #ffcc80); }
-.america-3 { background: linear-gradient(135deg, #26a69a, #ffe082); }
-.vn-1 { background: linear-gradient(135deg, #ff7043, #ffd180); }
-.vn-2 { background: linear-gradient(135deg, #66bb6a, #c8e6c9); }
-.vn-3 { background: linear-gradient(135deg, #78909c, #b0bec5); }
-.vn-4 { background: linear-gradient(135deg, #ab47bc, #f8bbd0); }
-.vn-5 { background: linear-gradient(135deg, #29b6f6, #80deea); }
-.vn-6 { background: linear-gradient(135deg, #26c6da, #a5d6a7); }
-.vn-7 { background: linear-gradient(135deg, #ffa726, #ff8a65); }
 
 .tour-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
 
@@ -392,6 +369,48 @@ a { text-decoration: none; color: inherit; }
 .cta p { font-size: 1.1rem; opacity: .95; max-width: 560px; margin: 0 auto 30px; }
 .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
+
+/* ===== CONTACT FORM ===== */
+.contact-form {
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+  color: var(--ink);
+  text-align: left;
+  max-width: 560px;
+  margin: 44px auto 0;
+  padding: 36px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, .6);
+  box-shadow: var(--glass-shadow);
+}
+.contact-form h3 { text-align: center; font-size: 1.35rem; margin-bottom: 22px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: .9rem; font-weight: 700; margin-bottom: 6px; color: var(--gray); }
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  font: inherit;
+  color: var(--ink);
+  background: rgba(255, 255, 255, .55);
+  transition: border-color .2s, background .2s;
+}
+.form-group input:focus,
+.form-group textarea:focus { outline: none; border-color: var(--orange); background: rgba(255, 255, 255, .85); }
+.form-group textarea { resize: vertical; }
+.contact-form .btn { display: block; width: 100%; text-align: center; border: none; }
+.form-note { margin-top: 14px; text-align: center; font-weight: 700; min-height: 1.2em; }
+.form-note.success { color: #2e7d32; }
+.form-note.error { color: #c62828; }
+
+@media (max-width: 560px) {
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form { padding: 26px; }
+}
 /* ===== FOOTER ===== */
 .footer {
   background: rgba(28, 43, 51, .6);
