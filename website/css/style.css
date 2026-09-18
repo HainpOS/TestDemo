@@ -312,6 +312,18 @@ a { text-decoration: none; color: inherit; }
 }
 .tour-card:hover .tour-img img { transform: scale(1.08); }
 
+/* Khối màu tạm thời cho tỉnh chưa có ảnh thật */
+.tour-img.placeholder { display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+.tour-img.placeholder span { filter: drop-shadow(0 6px 12px rgba(0,0,0,.18)); transition: transform .3s; }
+.tour-card:hover .tour-img.placeholder span { transform: scale(1.12); }
+
+.ha-long   { background: #2c6e8f; }
+.ninh-binh { background: #5a8f4b; }
+.hoi-an    { background: #d9a441; }
+.da-lat    { background: #8a6bbf; }
+.phu-quoc  { background: #1c9c96; }
+.can-tho   { background: #e0793a; }
+
 .tour-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
 
 .tour-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
