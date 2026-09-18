@@ -9,7 +9,7 @@
     content="Gói du lịch trọn gói Châu Á — Nhật Bản, Hàn Quốc, Thái Lan. Gần gũi, đa sắc màu văn hóa, giá tốt cho kỳ nghỉ ngắn ngày.">
   <link rel="canonical" href="https://travelola.vn/chau-a">
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b7a70'/><text x='16' y='22' font-family='Arial,Helvetica,sans-serif' font-size='18' font-weight='700' fill='white' text-anchor='middle'>T</text></svg>">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -38,17 +38,23 @@
   <header class="header" id="header">
     <div class="container nav">
       <a href="/" class="logo">
-        <span class="logo-icon">✈️</span>
         <span class="logo-text">Travel<em>ola</em></span>
       </a>
       <nav class="nav-menu" id="navMenu">
         <a href="/gioi-thieu">Giới thiệu</a>
         <a href="/viet-nam">Việt Nam</a>
-        <a href="/chau-au">Châu Âu</a>
-        <a href="/chau-a" class="active">Châu Á</a>
-        <a href="/chau-my">Châu Mỹ</a>
-        <a href="/chau-uc">Châu Úc</a>
-        <a href="/chau-bac-cuc">Bắc Cực</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle active" aria-expanded="false" aria-haspopup="true">
+            Nước ngoài <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="/chau-au">Châu Âu</a>
+            <a href="/chau-a" class="active">Châu Á</a>
+            <a href="/chau-my">Châu Mỹ</a>
+            <a href="/chau-uc">Châu Úc</a>
+            <a href="/chau-bac-cuc">Bắc Cực</a>
+          </div>
+        </div>
         <a href="/lien-he" class="btn btn-small">Liên hệ ngay</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="navMenu">☰</button>
@@ -119,7 +125,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a href="/" class="logo logo-footer"><span class="logo-icon">✈️</span> Travel<em>ola</em></a>
+        <a href="/" class="logo logo-footer">Travel<em>ola</em></a>
         <p>Chuyên gói du lịch trọn gói khắp thế giới. Uy tín từ 2015.</p>
       </div>
       <div>

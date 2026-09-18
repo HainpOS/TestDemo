@@ -12,7 +12,31 @@ navMenu.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
+    closeNavDropdowns();
   });
+});
+
+// Dropdown "Nước ngoài"
+function closeNavDropdowns() {
+  navMenu.querySelectorAll('.nav-dropdown.open').forEach((dropdown) => {
+    dropdown.classList.remove('open');
+    dropdown.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+  });
+}
+
+navMenu.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
+  const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = dropdown.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (!navMenu.contains(e.target)) {
+    closeNavDropdowns();
+  }
 });
 
 // Header đổ bóng khi cuộn

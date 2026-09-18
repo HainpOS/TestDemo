@@ -9,7 +9,7 @@
     content="Travelola — Chuyên cung cấp các gói du lịch trọn gói Việt Nam, Châu Âu, Châu Á, Châu Mỹ, Châu Úc và Bắc Cực với giá tốt nhất.">
   <link rel="canonical" href="https://travelola.vn/">
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b7a70'/><text x='16' y='22' font-family='Arial,Helvetica,sans-serif' font-size='18' font-weight='700' fill='white' text-anchor='middle'>T</text></svg>">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -54,17 +54,23 @@
   <header class="header" id="header">
     <div class="container nav">
       <a href="/" class="logo">
-        <span class="logo-icon">✈️</span>
         <span class="logo-text">Travel<em>ola</em></span>
       </a>
       <nav class="nav-menu" id="navMenu">
         <a href="/gioi-thieu">Giới thiệu</a>
         <a href="/viet-nam">Việt Nam</a>
-        <a href="/chau-au">Châu Âu</a>
-        <a href="/chau-a">Châu Á</a>
-        <a href="/chau-my">Châu Mỹ</a>
-        <a href="/chau-uc">Châu Úc</a>
-        <a href="/chau-bac-cuc">Bắc Cực</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Nước ngoài <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="/chau-au">Châu Âu</a>
+            <a href="/chau-a">Châu Á</a>
+            <a href="/chau-my">Châu Mỹ</a>
+            <a href="/chau-uc">Châu Úc</a>
+            <a href="/chau-bac-cuc">Bắc Cực</a>
+          </div>
+        </div>
         <a href="/lien-he" class="btn btn-small">Liên hệ ngay</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="navMenu">☰</button>
@@ -94,41 +100,48 @@
     </div>
   </section>
 
+  <!-- ===== GIỚI THIỆU ===== -->
+  <section class="section" id="ve-chung-toi">
+    <div class="container">
+      <p class="section-tag">🏢 Về Travelola</p>
+      <h2 class="section-title">Đồng hành cùng bạn <span class="gradient-text">từ năm 2015</span></h2>
+      <p class="section-sub">Thương hiệu du lịch trọn gói được hơn 10.000 khách hàng tin chọn, với đội ngũ hướng dẫn viên tận tâm và cam kết trọn gói — không phát sinh chi phí.</p>
+      <div style="text-align:center">
+        <a href="/gioi-thieu" class="btn btn-primary">Tìm hiểu thêm về chúng tôi →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== ĐIỂM ĐẾN NỔI BẬT ===== -->
-  <section class="section" id="diem-den">
+  <section class="section section-alt" id="diem-den">
     <div class="container">
       <p class="section-tag">🧭 Khám phá</p>
       <h2 class="section-title">Chọn <span class="gradient-text">điểm đến</span> mơ ước của bạn</h2>
       <p class="section-sub">Mỗi vùng đất là một hành trình riêng — nhấn vào để xem các gói tour trọn gói</p>
 
       <div class="about-grid">
-        <a href="/gioi-thieu" class="about-card">
-          <div class="about-icon" style="background:#fff3e0">🏢</div>
-          <h3>Giới thiệu</h3>
-          <p>Tìm hiểu về Travelola — hành trình đồng hành cùng bạn từ năm 2015.</p>
-        </a>
         <a href="/viet-nam" class="about-card">
-          <div class="about-icon" style="background:#ffebee">🇻🇳</div>
+          <div class="about-icon" style="background:#ffebee">🍜</div>
           <h3>Tour Việt Nam</h3>
           <p>Hà Nội, Sapa, Huế, Đà Nẵng, Nha Trang, Sài Gòn — vẻ đẹp quê hương trong tầm tay.</p>
         </a>
         <a href="/chau-au" class="about-card">
-          <div class="about-icon" style="background:#e0f7fa">🇪🇺</div>
+          <div class="about-icon" style="background:#e0f7fa">🏰</div>
           <h3>Tour Châu Âu</h3>
           <p>Pháp, Đức, Hà Lan... lãng mạn và cổ kính trong từng hành trình.</p>
         </a>
         <a href="/chau-a" class="about-card">
-          <div class="about-icon" style="background:#f3e5f5">🌏</div>
+          <div class="about-icon" style="background:#f3e5f5">⛩️</div>
           <h3>Tour Châu Á</h3>
           <p>Nhật Bản, Hàn Quốc, Thái Lan — gần gũi và đa sắc màu văn hóa.</p>
         </a>
         <a href="/chau-my" class="about-card">
-          <div class="about-icon" style="background:#e8f5e9">🌎</div>
+          <div class="about-icon" style="background:#e8f5e9">🗽</div>
           <h3>Tour Châu Mỹ</h3>
           <p>Mỹ, Canada, Mexico — hùng vĩ, hiện đại và tự do khám phá.</p>
         </a>
         <a href="/chau-uc" class="about-card">
-          <div class="about-icon" style="background:#fce4ec">🦘</div>
+          <div class="about-icon" style="background:#fce4ec">🐨</div>
           <h3>Tour Châu Úc</h3>
           <p>Sydney sôi động, New Zealand hùng vĩ và rạn san hô kỳ diệu.</p>
         </a>
@@ -145,7 +158,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a href="/" class="logo logo-footer"><span class="logo-icon">✈️</span> Travel<em>ola</em></a>
+        <a href="/" class="logo logo-footer">Travel<em>ola</em></a>
         <p>Chuyên gói du lịch trọn gói khắp thế giới. Uy tín từ 2015.</p>
       </div>
       <div>
