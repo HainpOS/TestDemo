@@ -9,7 +9,7 @@
     content="Giới thiệu Travelola — sứ mệnh, cam kết trọn gói và đội ngũ hướng dẫn viên tận tâm đồng hành cùng bạn từ năm 2015.">
   <link rel="canonical" href="https://travelola.vn/gioi-thieu">
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b7a70'/><text x='16' y='22' font-family='Arial,Helvetica,sans-serif' font-size='18' font-weight='700' fill='white' text-anchor='middle'>T</text></svg>">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -38,17 +38,23 @@
   <header class="header" id="header">
     <div class="container nav">
       <a href="/" class="logo">
-        <span class="logo-icon">✈️</span>
         <span class="logo-text">Travel<em>ola</em></span>
       </a>
       <nav class="nav-menu" id="navMenu">
         <a href="/gioi-thieu" class="active">Giới thiệu</a>
         <a href="/viet-nam">Việt Nam</a>
-        <a href="/chau-au">Châu Âu</a>
-        <a href="/chau-a">Châu Á</a>
-        <a href="/chau-my">Châu Mỹ</a>
-        <a href="/chau-uc">Châu Úc</a>
-        <a href="/chau-bac-cuc">Bắc Cực</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Nước ngoài <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="/chau-au">Châu Âu</a>
+            <a href="/chau-a">Châu Á</a>
+            <a href="/chau-my">Châu Mỹ</a>
+            <a href="/chau-uc">Châu Úc</a>
+            <a href="/chau-bac-cuc">Bắc Cực</a>
+          </div>
+        </div>
         <a href="/lien-he" class="btn btn-small">Liên hệ ngay</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="navMenu">☰</button>
@@ -87,11 +93,216 @@
     </div>
   </section>
 
+  <!-- ===== CON SỐ ẤN TƯỢNG ===== -->
+  <section class="section section-alt" id="con-so">
+    <div class="container">
+      <p class="section-tag">📊 Travelola qua những con số</p>
+      <h2 class="section-title">Được <span class="gradient-text">hàng ngàn khách hàng</span> tin chọn</h2>
+      <p class="section-sub">Mỗi con số là một hành trình đã được Travelola đồng hành trọn vẹn</p>
+
+      <div class="stats-strip">
+        <div class="stat">
+          <strong>10+</strong>
+          <span>Năm kinh nghiệm</span>
+        </div>
+        <div class="stat">
+          <strong>10.000+</strong>
+          <span>Khách hàng tin tưởng</span>
+        </div>
+        <div class="stat">
+          <strong>120+</strong>
+          <span>Tour trọn gói</span>
+        </div>
+        <div class="stat">
+          <strong>35</strong>
+          <span>Quốc gia điểm đến</span>
+        </div>
+        <div class="stat">
+          <strong>98%</strong>
+          <span>Khách hàng hài lòng</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HÀNH TRÌNH PHÁT TRIỂN ===== -->
+  <section class="section" id="hanh-trinh">
+    <div class="container">
+      <p class="section-tag">🕰️ Câu chuyện của chúng tôi</p>
+      <h2 class="section-title">Hành trình <span class="gradient-text">phát triển</span></h2>
+      <p class="section-sub">Từ một văn phòng nhỏ đến thương hiệu du lịch trọn gói được yêu thích</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2015</div>
+          <h3>Thành lập Travelola</h3>
+          <p>Khởi đầu với một văn phòng nhỏ tại TP.HCM và những tour Việt Nam đầu tiên, mang theo khát vọng đưa người Việt đi khắp thế giới.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2017</div>
+          <h3>Mở rộng thị trường Châu Á</h3>
+          <p>Ra mắt các gói tour Châu Á trọn gói, hợp tác cùng chuỗi khách sạn và hãng hàng không lớn để tối ưu chi phí cho khách hàng.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2019</div>
+          <h3>Chinh phục Châu Âu &amp; Châu Mỹ</h3>
+          <p>Danh mục điểm đến vượt ra ngoài châu Á với các tour Châu Âu lãng mạn và hành trình khám phá Châu Mỹ đầy mới lạ.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2021</div>
+          <h3>Chuyển đổi số toàn diện</h3>
+          <p>Ra mắt nền tảng đặt tour trực tuyến, tư vấn 24/7 và thanh toán không tiền mặt, giúp khách hàng đặt tour chỉ trong vài phút.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2023</div>
+          <h3>Cột mốc 10.000 khách hàng</h3>
+          <p>Vinh dự phục vụ hơn 10.000 lượt khách và mở rộng thêm các hành trình đặc biệt tới Châu Úc và Bắc Cực.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2026</div>
+          <h3>Vươn ra thế giới</h3>
+          <p>Travelola tiếp tục mở rộng mạng lưới đối tác toàn cầu, hướng tới mục tiêu trở thành thương hiệu du lịch trọn gói hàng đầu Việt Nam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ĐỘI NGŨ LÃNH ĐẠO ===== -->
+  <section class="section section-alt" id="doi-ngu">
+    <div class="container">
+      <p class="section-tag">🧑‍🤝‍🧑 Con người Travelola</p>
+      <h2 class="section-title">Đội ngũ <span class="gradient-text">lãnh đạo</span></h2>
+      <p class="section-sub">Những con người tâm huyết đứng sau mỗi hành trình trọn vẹn của bạn</p>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar" style="background:#fff3e0">👩‍💼</div>
+          <h3>Nguyễn Thu Hà</h3>
+          <p class="team-role">Nhà sáng lập &amp; CEO</p>
+          <p>Hơn 15 năm kinh nghiệm trong ngành lữ hành, người đặt nền móng cho triết lý "trọn gói — không phát sinh" của Travelola.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:#e0f7fa">👨‍💼</div>
+          <h3>Trần Minh Khôi</h3>
+          <p class="team-role">Giám đốc Vận hành</p>
+          <p>Phụ trách chuỗi cung ứng dịch vụ, đảm bảo mọi khách sạn, phương tiện và hướng dẫn viên luôn đạt chuẩn chất lượng cao nhất.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:#f3e5f5">👩‍✈️</div>
+          <h3>Lê Bảo Ngọc</h3>
+          <p class="team-role">Trưởng phòng Trải nghiệm khách hàng</p>
+          <p>Xây dựng đội ngũ chăm sóc khách hàng 24/7, luôn sẵn sàng hỗ trợ bạn trước, trong và sau mỗi chuyến đi.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:#e8f5e9">🧑‍💻</div>
+          <h3>Phạm Đức Anh</h3>
+          <p class="team-role">Giám đốc Công nghệ</p>
+          <p>Đứng sau nền tảng đặt tour trực tuyến của Travelola, giúp việc lên kế hoạch cho chuyến đi trở nên đơn giản hơn bao giờ hết.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUY TRÌNH ĐẶT TOUR ===== -->
+  <section class="section" id="quy-trinh">
+    <div class="container">
+      <p class="section-tag">🗺️ Đơn giản &amp; minh bạch</p>
+      <h2 class="section-title">Quy trình <span class="gradient-text">đặt tour</span> chỉ với 4 bước</h2>
+      <p class="section-sub">Không thủ tục rườm rà — bạn chỉ cần xách vali lên và đi</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Tư vấn nhu cầu</h3>
+          <p>Chia sẻ điểm đến mơ ước, thời gian và ngân sách — đội ngũ tư vấn sẽ gợi ý hành trình phù hợp nhất với bạn.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Thiết kế lộ trình</h3>
+          <p>Nhận lịch trình chi tiết cùng báo giá trọn gói minh bạch, không phát sinh chi phí ẩn.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Xác nhận &amp; thanh toán</h3>
+          <p>Đặt cọc và thanh toán an toàn qua nhiều hình thức, nhận xác nhận vé máy bay, khách sạn ngay sau đó.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Lên đường &amp; tận hưởng</h3>
+          <p>Hướng dẫn viên đồng hành 24/7 trong suốt chuyến đi, bạn chỉ cần tận hưởng từng khoảnh khắc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KHÁCH HÀNG NÓI GÌ ===== -->
+  <section class="section section-alt" id="danh-gia">
+    <div class="container">
+      <p class="section-tag">💬 Cảm nhận thực tế</p>
+      <h2 class="section-title">Khách hàng nói gì về <span class="gradient-text">Travelola</span></h2>
+      <p class="section-sub">Sự hài lòng của bạn là thước đo thành công của chúng tôi</p>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Chuyến đi Châu Âu trọn gói với Travelola thực sự vượt mong đợi. Mọi thứ từ vé máy bay đến khách sạn đều chỉn chu, hướng dẫn viên rất nhiệt tình."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👩</div>
+            <div>
+              <strong>Chị Mai Anh</strong>
+              <span>Khách hàng tour Châu Âu</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Gia đình mình đi tour Việt Nam 3 miền, giá cả hợp lý mà chất lượng dịch vụ rất tốt. Sẽ tiếp tục đồng hành cùng Travelola cho những chuyến đi sau."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👨</div>
+            <div>
+              <strong>Anh Quang Huy</strong>
+              <span>Khách hàng tour Việt Nam</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Lần đầu đi Bắc Cực mà không lo lắng gì cả vì đã có Travelola lo hết mọi thứ, từ visa đến trang phục giữ ấm. Trải nghiệm không thể nào quên!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👩‍🦰</div>
+            <div>
+              <strong>Chị Thanh Trúc</strong>
+              <span>Khách hàng tour Bắc Cực</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta" id="cta-gioi-thieu">
+    <div class="container cta-inner">
+      <h2>Sẵn sàng viết tiếp câu chuyện của bạn cùng Travelola? 🧳</h2>
+      <p>Khám phá ngay các gói tour trọn gói hoặc liên hệ để được tư vấn miễn phí, phù hợp với mọi ngân sách.</p>
+      <div class="cta-actions">
+        <a href="/viet-nam" class="btn btn-white">🧭 Xem các tour ngay</a>
+        <a href="/lien-he" class="btn btn-outline-white">✉️ Liên hệ tư vấn</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a href="/" class="logo logo-footer"><span class="logo-icon">✈️</span> Travel<em>ola</em></a>
+        <a href="/" class="logo logo-footer">Travel<em>ola</em></a>
         <p>Chuyên gói du lịch trọn gói khắp thế giới. Uy tín từ 2015.</p>
       </div>
       <div>
