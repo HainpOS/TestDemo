@@ -142,17 +142,8 @@ a { text-decoration: none; color: inherit; }
   height: 68px;
 }
 
-.logo { display: flex; align-items: center; gap: 8px; font-size: 1.25rem; font-weight: 800; }
+.logo { display: flex; align-items: center; font-size: 1.35rem; font-weight: 800; letter-spacing: -.01em; }
 .logo em { font-style: normal; color: var(--sea-dark); }
-.logo-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-}
-.logo-icon svg { width: 100%; height: 100%; }
 
 .nav-menu { display: flex; align-items: center; gap: 28px; }
 .nav-menu a { font-weight: 600; color: var(--ink); transition: color .2s; }
