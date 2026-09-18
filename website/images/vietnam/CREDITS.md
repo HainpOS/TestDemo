@@ -25,3 +25,4 @@ Các ảnh dưới đây do người dùng gửi trực tiếp trong phiên làm
 | hoi-an.jpg | Chùa Cầu, Hội An |
 | da-lat.jpg | Đà Lạt |
 | phu-quoc.jpg | Phú Quốc |
+| can-tho.jpg | Bến Ninh Kiều, Cần Thơ |
