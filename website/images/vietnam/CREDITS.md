@@ -13,3 +13,16 @@
 | sai-gon.jpg | Sài Gòn (UBND TP.HCM) | Steffen Schmitz | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City,_City_Hall,_2020-01_CN-03.jpg |
 
 Các giấy phép CC BY / CC BY-SA yêu cầu ghi nhận tác giả khi sử dụng lại.
+
+## Ảnh do người dùng cung cấp
+
+Các ảnh dưới đây do người dùng gửi trực tiếp trong phiên làm việc (resize xuống 500px), dùng cho trang `/viet-nam`. Nguồn gốc/giấy phép gốc chưa xác minh — cần thay bằng ảnh có giấy phép rõ ràng nếu dùng cho mục đích thương mại.
+
+| File | Địa điểm |
+|---|---|
+| ha-long.jpg | Vịnh Hạ Long |
+| ninh-binh.jpg | Tràng An, Ninh Bình |
+| hoi-an.jpg | Chùa Cầu, Hội An |
+| da-lat.jpg | Đà Lạt |
+| phu-quoc.jpg | Phú Quốc |
+| can-tho.jpg | Bến Ninh Kiều, Cần Thơ |
