@@ -148,12 +148,11 @@ a { text-decoration: none; color: inherit; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
   flex-shrink: 0;
-  color: var(--sea-dark);
 }
-.logo-icon svg { width: 100%; height: 100%; fill: currentColor; }
+.logo-icon svg { width: 100%; height: 100%; }
 
 .nav-menu { display: flex; align-items: center; gap: 28px; }
 .nav-menu a { font-weight: 600; color: var(--ink); transition: color .2s; }
@@ -591,8 +590,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .footer .logo-footer { color: #fff; margin-bottom: 12px; }
-.footer .logo-footer em,
-.footer .logo-footer .logo-icon { color: var(--sand); }
+.footer .logo-footer em { color: var(--sand); }
 .footer h4 { color: #fff; margin-bottom: 14px; font-size: 1rem; }
 .footer a { display: block; margin-bottom: 8px; transition: color .2s; }
 .footer a:hover { color: var(--sand); }
